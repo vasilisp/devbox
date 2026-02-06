@@ -27,7 +27,7 @@
       {
         packages = forAllSystems (pkgs: {
           default = pkgs.buildEnv {
-            name = "dev-bootstrap";
+            name = "devbox";
 
             paths = with pkgs; [
               # editors / UI entry points
