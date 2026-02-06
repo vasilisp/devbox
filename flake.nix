@@ -66,20 +66,10 @@
             {
               default = pkgs.mkShell {
                 packages = with pkgs; [
-                  clang
                   cmake
-                  lld
                   pkg-config
-
                   rustToolchain
                 ];
-
-                CC  = "clang";
-                CXX = "clang++";
-
-                shellHook = ''
-              export RUSTFLAGS="-C linker=clang"
-            '';
               };
             }
         );
