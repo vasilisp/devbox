@@ -60,6 +60,7 @@
                   "rustfmt"
                   "clippy"
                   "rust-src"
+                  "rust-analyzer"
                 ];
               };
           in
